@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "ConsoleApp1 Console Application",
+  "authors": [ "hathcoa" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+    "dependencies": {
+        "ClassLibrary1": "1.0.0-*",
+        "Microsoft.Dnx.Runtime.Abstractions": "1.0.0-beta7"
+    },
+
+  "commands": {
+    "ConsoleApp1": "ConsoleApp1"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}
