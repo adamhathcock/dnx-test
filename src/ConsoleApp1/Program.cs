@@ -22,7 +22,7 @@ namespace ConsoleApp1
             var c = new Class1();
             c.DoIt();
 
-            var t = Type.GetType("Class1");
+            var t = Type.GetType("ClassLibrary1.Class1");
             if (t != null)
             {
                 Console.WriteLine(t.Name);
@@ -31,6 +31,11 @@ namespace ConsoleApp1
             var library = libraryManager.GetLibrary("ClassLibrary1");
             var a = Assembly.Load(library.Assemblies.First());
             t = a.GetType("Class1");
+            if (t != null)
+            {
+                Console.WriteLine(t.Name);
+            }
+            t = a.GetType("ClassLibrary1.Class1");
             if (t != null)
             {
                 Console.WriteLine(t.Name);
